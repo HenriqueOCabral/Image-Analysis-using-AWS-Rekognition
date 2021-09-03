@@ -11,15 +11,15 @@ authorName: 'Serverless, inc.'
 authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 -->
 
+# Image Analysis Using AWS Rekognition
 
+### Serverless Framework AWS NodeJS Example
 
-# Serverless Framework AWS NodeJS Example
-
-This template demonstrates how to deploy a NodeJS function running on AWS Lambda using the traditional Serverless Framework. The deployed function does not include any event definitions as well as any kind of persistence (database). For more advanced configurations check out the [examples repo](https://github.com/serverless/examples/) which includes integrations with SQS, DynamoDB or examples of functions that are triggered in `cron`-like manner. For details about configuration of specific `events`, please refer to our [documentation](https://www.serverless.com/framework/docs/providers/aws/events/).
+The project starts with this template demonstrates how to deploy a NodeJS function running on AWS Lambda using the traditional Serverless Framework. The deployed function does not include any event definitions as well as any kind of persistence (database). For more advanced configurations check out the [examples repo](https://github.com/serverless/examples/) which includes integrations with SQS, DynamoDB or examples of functions that are triggered in `cron`-like manner. For details about configuration of specific `events`, please refer to our [documentation](https://www.serverless.com/framework/docs/providers/aws/events/).
 
 ## Usage
 
-This Repo starts from the AWS NodeJs Example and move forward to build an application that will read an image using AWS Rekognition to retrieve it's labels and return the data translated to brazilian portuguese. Awesome, right?!!
+Starting from the AWS NodeJs Example and move forward to build an application that will read an image using AWS Rekognition to retrieve it's labels and return the data translated to brazilian portuguese. Awesome, right?!!
 
 ** Project based on one of many classes in the a AWS Serverless Course developed by <a href="https://github.com/erickwendel">Erick Wendel</a> **
 
@@ -63,6 +63,7 @@ layers:
 ### Invocation
 
 After successful deployment, you can invoke the deployed function by using the following command:
+* Using the request.json file we achive some freedom to test/manage the application requests whithout needing to use Jumpman or other any third party testing solution...
 
 ```bash
 # See Functions Logs
